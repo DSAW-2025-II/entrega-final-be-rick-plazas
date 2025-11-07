@@ -11,6 +11,7 @@ services:
         value: HhLreDB2CEa8P7TEYpKlPkihzb48k6Sj
     buildCommand: "./mvnw clean package -DskipTests"
     startCommand: "java -jar target/wheels-0.0.1-SNAPSHOT.jar"
+    runtime: docker
     docker:
       image: eclipse-temurin:17-jdk
 
