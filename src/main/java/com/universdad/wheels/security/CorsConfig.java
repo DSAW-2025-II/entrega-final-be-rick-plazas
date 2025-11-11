@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("*") // Permite cualquier origen (temporalmente)
+                        .allowedOrigins("https://wheels-front-vercel.vercel.app", "http://localhost:5173") //Link front desplegado
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }
